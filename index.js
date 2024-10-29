@@ -70,4 +70,24 @@ console.log(check)
 const splicenew = players.splice(1,check,)
 console.log(players)
 
+const andnames = players.splice(1,0,"Tor", "Emil", "jens")
+console.log("new array with 3 more names " + players)
 // uppgift 16
+
+const splicenew2 = players.splice(0,3)
+console.log(splicenew2)
+console.log(players)
+
+//uppgift 17
+console.log(players.splice(3,0,"beer", "sucker", "soov", "vers"))
+console.log("list before remove of players " + players)
+const spliceremove = players.splice(2)
+console.log(spliceremove)
+console.log("what is left in list "+ players)
+console.log(players.splice(1,0,"bengt","per","fred","oskar"))
+console.log("way? " + players)
+console.log(players)
+
+// uppgift 18
+console.log(players.with(1,"Mbappé"))
+console.log(players)
