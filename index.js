@@ -91,3 +91,28 @@ console.log(players)
 // uppgift 18
 console.log(players.with(1,"Mbappé"))
 console.log(players)
+
+// Upgifter Loopar
+
+// Uppgift 19
+
+const numbers2 = [5, 8, 12, 20, 5];
+console.log(numbers2)
+
+for(let i = 0; i < numbers2.length; i++){
+    console.log(numbers2[i])
+}
+
+// Uppgift 20
+
+const numbers = [5, 8, 12, 20, 3];
+console.log(numbers)
+let sum = 0;
+
+for(let i = 0; i < numbers.length; i++){
+    sum += numbers[i];
+}
+console.log(sum)
+    
+// Uppgift 21
+
