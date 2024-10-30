@@ -117,7 +117,7 @@ console.log(sum)
 // Uppgift 21
 
 const numbers3 = [5, 8, 12, 20, 3];
-var max = 0;
+let max = 0;
 
 for(let i = 0; i < numbers3.length; i++){
     if (numbers3[i] > max){
@@ -138,3 +138,50 @@ console.log(numbers4)
 console.log(doubledNumbers)
 
 // uppgift 23
+
+const numbers6 = [5, 8, 12, 20, 3];
+let sum2 = 0;
+
+for(let i = 0; i < numbers6.length; i++){
+    sum2 += (numbers6[i]/numbers6.length);
+}
+console.log(sum2)
+
+//Uppgift 24
+
+const numbers7 = [5, 8, 12, 20, 3];
+let min = numbers7[0]
+
+for(let i = 1; i < numbers7.length; i++){
+        if (numbers7[i]< min){
+            min = numbers7[i];
+        }
+}
+console.log(min)
+
+// Uppgift 25
+
+const numbers8 = [5, 8, 12, 20, 3];
+let positiveNumbers =[];
+
+for (let i = 0; i < numbers8.length; i++){
+    const num = numbers8[i];
+    if (num % 2 === 0){
+        positiveNumbers.push(num);
+    }
+}
+console.log(positiveNumbers)
+
+// Uppgift 26
+
+const mixedNumbers = [3, -5, 12, -1, 8, -6];
+let positive = [];
+
+for(let i = 0; i < mixedNumbers.length; i++){
+    const numm = mixedNumbers[i];
+    if (numm % 2 === 0){
+        positive.push(numm);
+    }
+}
+
+console.log(positive)
