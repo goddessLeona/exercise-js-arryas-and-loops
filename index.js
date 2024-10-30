@@ -185,3 +185,33 @@ for(let i = 0; i < mixedNumbers.length; i++){
 }
 
 console.log(positive)
+
+// Uppgift 27
+
+const numbers9 = [5, 8, 12, 20, 3];
+let i = 0;
+
+while (i < numbers9.length){
+   console.log(numbers9[i])
+    i++;
+
+    if (numbers9[i] > 10 ){
+    break;
+    }
+}
+
+// Uppgift 28
+
+// uppgift 29
+
+const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
+console.log(words)
+let newword = [];
+const counting = {};
+
+for(let i = 0; i < words.length; i++ ){
+    let newword2 = words[i];
+    counting [newword2]= (counting[newword2] || 0) || +1;
+}
+
+console.log(counting)
