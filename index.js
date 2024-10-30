@@ -116,3 +116,25 @@ console.log(sum)
     
 // Uppgift 21
 
+const numbers3 = [5, 8, 12, 20, 3];
+var max = 0;
+
+for(let i = 0; i < numbers3.length; i++){
+    if (numbers3[i] > max){
+        max= numbers3[i];
+    }
+}
+console.log(max)
+
+// uppgift 22
+
+const numbers4 = [5, 8, 12, 20, 3];
+let doubledNumbers = []
+
+for (let i = 0; i < numbers4.length; i++){
+        doubledNumbers.push(numbers4[i]*2);
+}
+console.log(numbers4)
+console.log(doubledNumbers)
+
+// uppgift 23
