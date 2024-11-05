@@ -116,7 +116,18 @@ console.log(sum)
     
 // Uppgift 21
 
-const numbers3 = [5, 8, 12, 20, 3];
+const numbers = [5, 8, 12, 20, 3];
+
+let biggestNumber = 0; 
+
+for (const number of numbers) {
+  if (number > biggestNumber) {
+    biggestNumber = number;
+  }
+}
+
+
+/*const numbers3 = [5, 8, 12, 20, 3];
 let max = 0;
 
 for(let i = 0; i < numbers3.length; i++){
@@ -124,18 +135,28 @@ for(let i = 0; i < numbers3.length; i++){
         max= numbers3[i];
     }
 }
-console.log(max)
+console.log(max)*/
+
+
 
 // uppgift 22
 
 const numbers4 = [5, 8, 12, 20, 3];
+const doubledNumbers = [];
+
+for (const n of numbers) {
+  doubledNumbers.push(n * 2);
+}
+
+
+/*const numbers4 = [5, 8, 12, 20, 3];
 let doubledNumbers = []
 
 for (let i = 0; i < numbers4.length; i++){
         doubledNumbers.push(numbers4[i]*2);
 }
 console.log(numbers4)
-console.log(doubledNumbers)
+console.log(doubledNumbers)*/
 
 // uppgift 23
 
@@ -202,16 +223,30 @@ while (i < numbers9.length){
 
 // Uppgift 28
 
+/*Utgå från arrayen mixedNumbers ovan. Använd en while-loop för att räkna hur många negativa tal det 
+finns i arrayen. Logga antalet.*/
+
+const numbers10 = [5, 8, 12, 20, 3];
+let i = 0;
+
+
+
 // uppgift 29
 
-const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
-console.log(words)
-let newword = [];
-const counting = {};
 
-for(let i = 0; i < words.length; i++ ){
-    let newword2 = words[i];
-    counting [newword2]= (counting[newword2] || 0) || +1;
+const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
+
+for (const w of words) {
+  const numberOfCharacters = w.length;
+  console.log(`#29. Word: ${w}. It has ${numberOfCharacters} characters.`);
 }
 
-console.log(counting)
+// Uppgift 30
+
+let newStr = "";
+
+for (const word of words) {
+  newStr += word[0];
+}
+
+console.log(`#30. ${newStr}`);
